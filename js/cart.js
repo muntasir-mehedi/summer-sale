@@ -50,7 +50,7 @@ applyButton.addEventListener('click',function(){
     totalPrice.innerText = parseFloat(totalPrice);
     console.log(totalPrice.toFixed(2));
     if (totalPrice >= 200) {
-        applyButton.disabled = false
+        applyButton.removeAttribute('disabled');
     } else {   
         applyButton.setAttribute('disabled', true);
     }
